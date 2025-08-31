@@ -1,0 +1,61 @@
+<div class="container mt-5">
+  <div class="row">
+
+    <div class="col-lg-8 offset-lg-2">
+      <div class="card">
+        <div class="card-body text-center">
+          <h3>Tarjeta Credito</h3>
+        </div>
+      </div>
+      </div>
+    </div>
+    <div class="row mt-4">
+      <div class="col-lg-6">
+        <div class="card">
+          <div class="card-body">
+            <h5>Agregar Tarjeta</h5>
+
+            <form>
+              <div class="input-group mb-3">
+                
+  <span class="input-group-text" id="basic-addon1">&#64;</span>
+  <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+</div>
+            </form>
+
+          </div>
+        </div>
+      </div>
+       <div class="col-lg-6">
+        <div class="card">
+          <div class="card-body">
+            <h5>Listado de Tarjeta</h5>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Nombre</th>
+                  <th>Numero</th>
+                  <th>Fecha Exp</th>
+                  <th>CVV</th>
+                </tr>
+              </thead>
+             <tbody>
+                <tr *ngFor="let tarjeta of listTarjetas">
+                  <td>{{ tarjeta.titular }}</td>
+                  <td>{{ tarjeta.numero }}</td>
+                  <td>{{ tarjeta.fechaExpiracion  }}</td>
+                  <td>
+                   <button>Editar</button>
+ <button>Eliminar</button>
+                  </td>
+                </tr>
+             </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+</div>
+
