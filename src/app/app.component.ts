@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { TarjetaCreditoComponent } from './component/tarjeta-credito/tarjeta-credito.component';
+
 @Component({
   selector: 'app-root',
    standalone: true,
