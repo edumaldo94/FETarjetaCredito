@@ -13,9 +13,9 @@
     <div class="col-lg-6">
       <div class="card">
         <div class="card-body">
-          <h5>Agregar Tarjeta</h5>
+          <h5>{{accion | uppercase}} Tarjeta</h5>
 
-          <form [formGroup]="form" (ngSubmit)="agregarTarjeta()">
+          <form [formGroup]="form" (ngSubmit)="addCard()">
             <div class="input-group mb-3">
 
               <span class="input-group-text" id="basic-addon1">
@@ -30,11 +30,11 @@
             <div class="input-group mb-3">
               <span class="input-group-text" id="basic-addon1">
                 <i class="fa-solid fa-credit-card"
-                  [class.green-icon]="this.form.get('numero')?.valid"
-                [class.red-icon]="this.form.get('numero')?.invalid && this.form.get('numero')?.touched"
+                  [class.green-icon]="this.form.get('numeroTarjeta')?.valid"
+                [class.red-icon]="this.form.get('numeroTarjeta')?.invalid && this.form.get('numeroTarjeta')?.touched"
                 ></i>
               </span>
-              <input formControlName = "numero" maxlength="16" type="text" class="form-control" placeholder="Número Tarjeta">
+              <input formControlName = "numeroTarjeta" maxlength="16" type="text" class="form-control" placeholder="Número Tarjeta">
             </div>
             <div class="row">
               <div class="col lg-7">
@@ -69,7 +69,8 @@
   }"
    [disabled]="this.form.invalid" type="submit" class="btn btn-success btn-lg">
               <i class="fa-solid fa-database"></i>  Aceptar
-              </button>
+
+            </button>
             </div>
           </form>
 
@@ -92,15 +93,15 @@
             <tbody>
               <tr *ngFor="let tarjeta of listTarjetas; let i = index">
                 <td>{{ tarjeta.titular }}</td>
-                <td>{{ tarjeta.numero }}</td>
+                <td>{{ tarjeta.numeroTarjeta }}</td>
                 <td>{{ tarjeta.fechaExpiracion }}</td>
 
                 <td>
-                  <i class="fa-solid fa-pen-to-square"></i>
+                  <i (click)="updateCard(tarjeta)" class="fa-solid fa-pen-to-square"></i>
 
                 </td>
 <td>
-   <i class="fa-solid fa-trash" (click)="deletCard(i)"></i>
+   <i class="fa-solid fa-trash" (click)="tarjeta.id !== undefined && deleteCard(tarjeta.id)"></i>
 </td>
               </tr>
             </tbody>

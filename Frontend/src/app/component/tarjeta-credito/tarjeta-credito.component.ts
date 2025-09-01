@@ -1,52 +1,123 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
-import { ToastrService } from 'ngx-toastr';
+import { ToastrModule, ToastrService } from 'ngx-toastr';
+import { Tarjeta, TarjetaService } from '../../services/tarjeta.service';
 
 @Component({
   selector: 'app-tarjeta-credito',
   standalone: true,
-  imports: [CommonModule,ReactiveFormsModule],
+  imports: [CommonModule,
+    ReactiveFormsModule,
+    ToastrModule // <- IMPORTANTE para Toastr
+  ],
   templateUrl: './tarjeta-credito.component.html',
   styleUrls: ['./tarjeta-credito.component.scss']
 })
 export class TarjetaCreditoComponent implements OnInit {
 
-  listTarjetas: any[] = [
-    { titular: 'Eduardo', numero: '1234 5678 9012 3456', fechaExpiracion: '12/24', cvv: '123', tipo: 'Visa' },
-    { titular: 'Maria', numero: '9876 5432 1098 7654', fechaExpiracion: '11/23', cvv: '456', tipo: 'MasterCard' },
-    { titular: 'Juan', numero: '4567 8901 2345 6789', fechaExpiracion: '10/25', cvv: '789', tipo: 'American Express' }
-  ];
-
-  form:FormGroup;
-
-  constructor( private fb: FormBuilder,private toastr: ToastrService) {
+  listTarjetas: Tarjeta[] = [];
+  accion = 'Agregar';
+  form: FormGroup;
+  id: number | undefined;
+  constructor(private fb: FormBuilder, private toastr: ToastrService, private _tarjetaService: TarjetaService) {
     this.form = this.fb.group({
-      titular: ['',Validators.required],
-      numero: ['', [Validators.required, Validators.minLength(16), Validators.maxLength(16)]],
-  fechaExpiracion: ['', [Validators.required, Validators.minLength(5), Validators.maxLength(5)]],
+      titular: ['', Validators.required],
+      numeroTarjeta: ['', [Validators.required, Validators.minLength(16), Validators.maxLength(16)]],
+      fechaExpiracion: ['', [Validators.required, Validators.minLength(5), Validators.maxLength(5)]],
       cvv: ['', [Validators.required, Validators.minLength(3), Validators.maxLength(3)]],
     });
   }
 
-  ngOnInit(): void { }
-
-  agregarTarjeta(){
-    console.log(this.form);
-  const tarjeta: any = {
-    titular: this.form.value.titular,
-    numero: this.form.value.numero,
-    fechaExpiracion: this.form.value.fechaExpiracion,
-    cvv: this.form.value.cvv,
-
+  ngOnInit(): void {
+    this.getCards();
   }
-  this.listTarjetas.push(tarjeta);
-  this.toastr.success('Tarjeta agregada con exito', 'Tarjeta Agregada', {
-    timeOut: 3000,
-    positionClass: 'toast-top-right'
-  });
-  this.form.reset();
+
+  getCards() {
+    try {
+      this._tarjetaService.getListCards().subscribe((data: any) => {
+        console.log(data);
+        this.listTarjetas = data;
+      }, error => {
+        console.log(error);
+      })
+    } catch (error) {
+
+    }
+  };
+  addCard() {
+    console.log(this.form);
+    const tarjeta: Tarjeta = {
+      id: this.id,
+      titular: this.form.value.titular,          // -> Titular (PascalCase)
+      numeroTarjeta: this.form.value.numeroTarjeta,            // -> Numero (PascalCase)
+      fechaExpiracion: this.form.value.fechaExpiracion, // -> FechaExpiracion
+      cvv: this.form.value.cvv
+
+    }
+    //this.listTarjetas.push(tarjeta);
+    if (this.id === undefined) {
+      this._tarjetaService.saveCard(tarjeta).subscribe(data => {
+        this.toastr.success('Tarjeta agregada con exito', 'Tarjeta Agregada', {
+          timeOut: 3000,
+          positionClass: 'toast-top-right'
+        });
+        this.getCards();
+        this.form.reset();
+      }, error => {
+        this.toastr.error('Opss... Ocurrio un error', 'Error');
+        console.log(error);
+      })
+    } else {
+      console.log("id :::: " + this.id);
+      tarjeta.id = this.id;
+      console.log("tarjeta :::: " + tarjeta.id);
+      this._tarjetaService.updateCard(this.id, tarjeta).subscribe(data => {
+        this.form.reset();
+        this.accion = 'Agregar';
+        this.id = undefined;
+        this.toastr.info('Tarjeta actualizada con exito', 'Tarjeta Actualizada', {
+          timeOut: 3000,
+          positionClass: 'toast-top-right'
+        });
+        this.getCards();
+      }, error => {
+        this.toastr.error('update... Ocurrio un error', 'Error');
+        console.log(error);
+      })
+    }
+
+  };
+
+  deleteCard(id: number) {
+    try {
+      this._tarjetaService.deleteCard(id).subscribe(data => {
+        this.toastr.error('Tarjeta eliminada con exito', 'Tarjeta Eliminada', {
+          timeOut: 3000,
+          positionClass: 'toast-top-right'
+        });
+        this.getCards();
+      }, error => {
+        console.log(error);
+      })
+    } catch (error) {
+      console.log(error);
+    }
+  };
+  updateCard(tarjeta: any) {
+    console.log(tarjeta.numeroTarjeta);
+    this.accion = 'Editar';
+    this.id = tarjeta.id;
+    this.form.patchValue({
+      titular: tarjeta.titular,
+      numeroTarjeta: tarjeta.numeroTarjeta,
+      fechaExpiracion: tarjeta.fechaExpiracion,
+      cvv: tarjeta.cvv
+    });
+  }
+
 };
+/*
 deletCard(index:number){
 
 this.listTarjetas.splice(index,1);
@@ -54,6 +125,6 @@ this.listTarjetas.splice(index,1);
     timeOut: 3000,
    positionClass: 'toast-top-right'
 });
-};
+};*/
 
-}
+
