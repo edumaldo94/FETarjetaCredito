@@ -3,24 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\Maldonado\\Documents\\GitHub\\FETarjetaCredito\\Backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0E4F797A-CC9A-4FE0-AE70-91337C934AD2}|Backend\\Backend.csproj|c:\\users\\maldonado\\documents\\github\\fetarjetacredito\\backend\\backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0E4F797A-CC9A-4FE0-AE70-91337C934AD2}|Backend\\Backend.csproj|solutionrelative:backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0E4F797A-CC9A-4FE0-AE70-91337C934AD2}|Backend\\Backend.csproj|c:\\users\\maldonado\\documents\\github\\fetarjetacredito\\backend\\backend\\controllers\\tarjetacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E4F797A-CC9A-4FE0-AE70-91337C934AD2}|Backend\\Backend.csproj|solutionrelative:backend\\controllers\\tarjetacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0E4F797A-CC9A-4FE0-AE70-91337C934AD2}|Backend\\Backend.csproj|c:\\users\\maldonado\\documents\\github\\fetarjetacredito\\backend\\backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{0E4F797A-CC9A-4FE0-AE70-91337C934AD2}|Backend\\Backend.csproj|solutionrelative:backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0E4F797A-CC9A-4FE0-AE70-91337C934AD2}|Backend\\Backend.csproj|c:\\users\\maldonado\\documents\\github\\fetarjetacredito\\backend\\backend\\controllers\\tarjetacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0E4F797A-CC9A-4FE0-AE70-91337C934AD2}|Backend\\Backend.csproj|solutionrelative:backend\\controllers\\tarjetacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0E4F797A-CC9A-4FE0-AE70-91337C934AD2}|Backend\\Backend.csproj|c:\\users\\maldonado\\documents\\github\\fetarjetacredito\\backend\\backend\\models\\tarjetacredito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E4F797A-CC9A-4FE0-AE70-91337C934AD2}|Backend\\Backend.csproj|solutionrelative:backend\\models\\tarjetacredito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0E4F797A-CC9A-4FE0-AE70-91337C934AD2}|Backend\\Backend.csproj|c:\\users\\maldonado\\documents\\github\\fetarjetacredito\\backend\\backend\\aplicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0E4F797A-CC9A-4FE0-AE70-91337C934AD2}|Backend\\Backend.csproj|solutionrelative:backend\\aplicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0E4F797A-CC9A-4FE0-AE70-91337C934AD2}|Backend\\Backend.csproj|c:\\users\\maldonado\\documents\\github\\fetarjetacredito\\backend\\backend\\models\\tarjetacredito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0E4F797A-CC9A-4FE0-AE70-91337C934AD2}|Backend\\Backend.csproj|solutionrelative:backend\\models\\tarjetacredito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0E4F797A-CC9A-4FE0-AE70-91337C934AD2}|Backend\\Backend.csproj|c:\\users\\maldonado\\documents\\github\\fetarjetacredito\\backend\\backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E4F797A-CC9A-4FE0-AE70-91337C934AD2}|Backend\\Backend.csproj|solutionrelative:backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -51,13 +51,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Maldonado\\Documents\\GitHub\\FETarjetaCredito\\Backend\\Backend\\Program.cs",
               "RelativeDocumentMoniker": "Backend\\Program.cs",
               "ToolTip": "C:\\Users\\Maldonado\\Documents\\GitHub\\FETarjetaCredito\\Backend\\Backend\\Program.cs",
               "RelativeToolTip": "Backend\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAA5AAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABQAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-01T12:28:26.948Z",
               "EditorCaption": ""
@@ -77,7 +77,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "TarjetaCredito.cs",
               "DocumentMoniker": "C:\\Users\\Maldonado\\Documents\\GitHub\\FETarjetaCredito\\Backend\\Backend\\Models\\TarjetaCredito.cs",
               "RelativeDocumentMoniker": "Backend\\Models\\TarjetaCredito.cs",
@@ -90,13 +90,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "TarjetaController.cs",
               "DocumentMoniker": "C:\\Users\\Maldonado\\Documents\\GitHub\\FETarjetaCredito\\Backend\\Backend\\Controllers\\TarjetaController.cs",
               "RelativeDocumentMoniker": "Backend\\Controllers\\TarjetaController.cs",
               "ToolTip": "C:\\Users\\Maldonado\\Documents\\GitHub\\FETarjetaCredito\\Backend\\Backend\\Controllers\\TarjetaController.cs",
               "RelativeToolTip": "Backend\\Controllers\\TarjetaController.cs",
-              "ViewState": "AgIAAEAAAAAAAAAAAAAqwDsAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAqwDsAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-01T11:46:36.591Z",
               "EditorCaption": ""
