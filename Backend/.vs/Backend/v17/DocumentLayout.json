@@ -7,20 +7,32 @@
       "RelativeMoniker": "D:0:0:{0E4F797A-CC9A-4FE0-AE70-91337C934AD2}|Backend\\Backend.csproj|solutionrelative:backend\\controllers\\tarjetacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{0E4F797A-CC9A-4FE0-AE70-91337C934AD2}|Backend\\Backend.csproj|c:\\users\\maldonado\\documents\\github\\fetarjetacredito\\backend\\backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E4F797A-CC9A-4FE0-AE70-91337C934AD2}|Backend\\Backend.csproj|solutionrelative:backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E4F797A-CC9A-4FE0-AE70-91337C934AD2}|Backend\\Backend.csproj|c:\\users\\maldonado\\documents\\github\\fetarjetacredito\\backend\\backend\\migrations\\aplicationdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E4F797A-CC9A-4FE0-AE70-91337C934AD2}|Backend\\Backend.csproj|solutionrelative:backend\\migrations\\aplicationdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{0E4F797A-CC9A-4FE0-AE70-91337C934AD2}|Backend\\Backend.csproj|c:\\users\\maldonado\\documents\\github\\fetarjetacredito\\backend\\backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{0E4F797A-CC9A-4FE0-AE70-91337C934AD2}|Backend\\Backend.csproj|solutionrelative:backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Maldonado\\Documents\\GitHub\\FETarjetaCredito\\Backend\\Backend\\Migrations\\MySqlDb\\20250902131653_InitMySql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Backend\\Migrations\\MySqlDb\\20250902131653_InitMySql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0E4F797A-CC9A-4FE0-AE70-91337C934AD2}|Backend\\Backend.csproj|c:\\users\\maldonado\\documents\\github\\fetarjetacredito\\backend\\backend\\models\\tarjetacredito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0E4F797A-CC9A-4FE0-AE70-91337C934AD2}|Backend\\Backend.csproj|solutionrelative:backend\\models\\tarjetacredito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0E4F797A-CC9A-4FE0-AE70-91337C934AD2}|Backend\\Backend.csproj|c:\\users\\maldonado\\documents\\github\\fetarjetacredito\\backend\\backend\\aplicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0E4F797A-CC9A-4FE0-AE70-91337C934AD2}|Backend\\Backend.csproj|solutionrelative:backend\\aplicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0E4F797A-CC9A-4FE0-AE70-91337C934AD2}|Backend\\Backend.csproj|c:\\users\\maldonado\\documents\\github\\fetarjetacredito\\backend\\backend\\mysqldbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E4F797A-CC9A-4FE0-AE70-91337C934AD2}|Backend\\Backend.csproj|solutionrelative:backend\\mysqldbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0E4F797A-CC9A-4FE0-AE70-91337C934AD2}|Backend\\Backend.csproj|c:\\users\\maldonado\\documents\\github\\fetarjetacredito\\backend\\backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0E4F797A-CC9A-4FE0-AE70-91337C934AD2}|Backend\\Backend.csproj|solutionrelative:backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0E4F797A-CC9A-4FE0-AE70-91337C934AD2}|Backend\\Backend.csproj|c:\\users\\maldonado\\documents\\github\\fetarjetacredito\\backend\\backend\\aplicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E4F797A-CC9A-4FE0-AE70-91337C934AD2}|Backend\\Backend.csproj|solutionrelative:backend\\aplicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +42,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,46 +50,72 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
+              "Title": "20250902131653_InitMySql.cs",
+              "DocumentMoniker": "C:\\Users\\Maldonado\\Documents\\GitHub\\FETarjetaCredito\\Backend\\Backend\\Migrations\\MySqlDb\\20250902131653_InitMySql.cs",
+              "RelativeDocumentMoniker": "Backend\\Migrations\\MySqlDb\\20250902131653_InitMySql.cs",
+              "ToolTip": "C:\\Users\\Maldonado\\Documents\\GitHub\\FETarjetaCredito\\Backend\\Backend\\Migrations\\MySqlDb\\20250902131653_InitMySql.cs",
+              "RelativeToolTip": "Backend\\Migrations\\MySqlDb\\20250902131653_InitMySql.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-02T13:16:53.608Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MySqlDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Maldonado\\Documents\\GitHub\\FETarjetaCredito\\Backend\\Backend\\MySqlDbContext.cs",
+              "RelativeDocumentMoniker": "Backend\\MySqlDbContext.cs",
+              "ToolTip": "C:\\Users\\Maldonado\\Documents\\GitHub\\FETarjetaCredito\\Backend\\Backend\\MySqlDbContext.cs",
+              "RelativeToolTip": "Backend\\MySqlDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-02T13:07:05.551Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AplicationDbContextModelSnapshot.cs",
+              "DocumentMoniker": "C:\\Users\\Maldonado\\Documents\\GitHub\\FETarjetaCredito\\Backend\\Backend\\Migrations\\AplicationDbContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "Backend\\Migrations\\AplicationDbContextModelSnapshot.cs",
+              "ToolTip": "C:\\Users\\Maldonado\\Documents\\GitHub\\FETarjetaCredito\\Backend\\Backend\\Migrations\\AplicationDbContextModelSnapshot.cs",
+              "RelativeToolTip": "Backend\\Migrations\\AplicationDbContextModelSnapshot.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-02T13:03:14.644Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\Maldonado\\Documents\\GitHub\\FETarjetaCredito\\Backend\\Backend\\appsettings.json",
               "RelativeDocumentMoniker": "Backend\\appsettings.json",
               "ToolTip": "C:\\Users\\Maldonado\\Documents\\GitHub\\FETarjetaCredito\\Backend\\Backend\\appsettings.json",
               "RelativeToolTip": "Backend\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-09-01T13:57:29.348Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Maldonado\\Documents\\GitHub\\FETarjetaCredito\\Backend\\Backend\\Program.cs",
               "RelativeDocumentMoniker": "Backend\\Program.cs",
               "ToolTip": "C:\\Users\\Maldonado\\Documents\\GitHub\\FETarjetaCredito\\Backend\\Backend\\Program.cs",
               "RelativeToolTip": "Backend\\Program.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABQAAAA5AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-01T12:28:26.948Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AplicationDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\Maldonado\\Documents\\GitHub\\FETarjetaCredito\\Backend\\Backend\\AplicationDbContext.cs",
-              "RelativeDocumentMoniker": "Backend\\AplicationDbContext.cs",
-              "ToolTip": "C:\\Users\\Maldonado\\Documents\\GitHub\\FETarjetaCredito\\Backend\\Backend\\AplicationDbContext.cs",
-              "RelativeToolTip": "Backend\\AplicationDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-01T12:25:44.145Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "TarjetaCredito.cs",
               "DocumentMoniker": "C:\\Users\\Maldonado\\Documents\\GitHub\\FETarjetaCredito\\Backend\\Backend\\Models\\TarjetaCredito.cs",
               "RelativeDocumentMoniker": "Backend\\Models\\TarjetaCredito.cs",
@@ -96,9 +134,22 @@
               "RelativeDocumentMoniker": "Backend\\Controllers\\TarjetaController.cs",
               "ToolTip": "C:\\Users\\Maldonado\\Documents\\GitHub\\FETarjetaCredito\\Backend\\Backend\\Controllers\\TarjetaController.cs",
               "RelativeToolTip": "Backend\\Controllers\\TarjetaController.cs",
-              "ViewState": "AgIAAEYAAAAAAAAAAAAqwDsAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABUAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-01T11:46:36.591Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Maldonado\\Documents\\GitHub\\FETarjetaCredito\\Backend\\Backend\\AplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Backend\\AplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\Maldonado\\Documents\\GitHub\\FETarjetaCredito\\Backend\\Backend\\AplicationDbContext.cs",
+              "RelativeToolTip": "Backend\\AplicationDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-01T12:25:44.145Z",
               "EditorCaption": ""
             }
           ]

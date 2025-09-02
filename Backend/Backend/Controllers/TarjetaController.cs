@@ -11,11 +11,22 @@ namespace Backend.Controllers
     public class TarjetaController : ControllerBase
 
     {
-        private readonly AplicationDbContext _context;
-        public TarjetaController(AplicationDbContext context) {
-        
+        //Conexión a DB SQL SERVER
+        /* // private readonly AplicationDbContext _context;
+      public TarjetaController(AplicationDbContext context) {
+
+              _context = context;
+          }*/
+
+
+        //Conexión a DB MYSQL 
+        private readonly MySqlDbContext _context;
+        public TarjetaController(MySqlDbContext context)
+        {
+
             _context = context;
         }
+
         // GET: api/<TarjetaController>
         [HttpGet]
         public async Task<IActionResult> Get()

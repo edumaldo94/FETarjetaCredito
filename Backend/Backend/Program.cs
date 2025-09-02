@@ -4,14 +4,25 @@ using Microsoft.Extensions.DependencyInjection;
 
 var builder = WebApplication.CreateBuilder(args);
 var connectionString = builder.Configuration.GetConnectionString("DevConnection");
+var mySqlConnection = builder.Configuration.GetConnectionString("MySqlConnection");
 
 // Add services to the container.
 // Add services to the container.
 builder.Services.AddControllers();
 
-// Registrar DbContext
+// Registrar DbContext SQL Server
 builder.Services.AddDbContext<AplicationDbContext>(options =>
     options.UseSqlServer(connectionString));
+
+// Registrar DbContext MySQL
+builder.Services.AddDbContext<MySqlDbContext>(options =>
+    options.UseMySql(
+        builder.Configuration.GetConnectionString("MySqlConnection"),
+        new MySqlServerVersion(new Version(8, 0, 34)), // Ajusta versión
+        mysqlOptions => mysqlOptions.EnableRetryOnFailure()
+    )
+);
+
 // Habilitar CORS
 builder.Services.AddCors(options =>
 {
@@ -23,6 +34,7 @@ builder.Services.AddCors(options =>
                    .AllowAnyMethod();
         });
 });
+
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
